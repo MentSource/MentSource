@@ -1,2 +1,4 @@
-# MentSource
-MentSource is an open-source platform democratizing technology education through hands-on projects and collaborative learning. We bridge the gap between tech education and people, creating a space where everyone regardless of age, gender, or experience level can contribute, learn, and grow.  
+## MentSource
+<img width="1418" height="474" alt="image" src="https://github.com/user-attachments/assets/e3279c63-57fa-4d51-b4c1-a814d4b907ae" />
+
+
