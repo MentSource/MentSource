@@ -85,7 +85,7 @@ const Mentorship = () => {
   return (
     <>
       {/* Hero */}
-        <section className="section-padding bg-gradient-hero relative overflow-hidden py-20">
+        <section className="bg-gradient-hero relative overflow-hidden py-20">
           <div className="absolute top-20 right-10 w-72 h-72 bg-secondary/20 blob float opacity-40" />
           <div className="container-main relative z-10">
             <div className="max-w-3xl mx-auto text-center">
@@ -122,9 +122,9 @@ const Mentorship = () => {
         </section>
 
         {/* Benefits */}
-        <section className="section-padding">
+        <section>
           <div className="container-main">
-            <div className="text-center max-w-3xl mx-auto mb-12">
+            <div className="text-center max-w-3xl mx-auto mb-6">
               <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-4">
                 Why Mentorship Matters
               </h2>
@@ -177,7 +177,7 @@ const Mentorship = () => {
         </section>
 
         {/* Featured Mentors */}
-        <section className="section-padding">
+        <section className="py-4">
           <div className="container-main">
             <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12">
               <div>

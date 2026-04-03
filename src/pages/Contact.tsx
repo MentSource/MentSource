@@ -127,7 +127,7 @@ const Contact = () => {
         </section>
 
         {/* Contact Form */}
-        <section className="section-padding">
+        <section>
           <div className="container-main">
             <div className="max-w-2xl mx-auto">
               <div className="bg-card rounded-3xl border border-border/50 p-8 sm:p-10 shadow-soft">
