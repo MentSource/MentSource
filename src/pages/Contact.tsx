@@ -77,7 +77,7 @@ const Contact = () => {
   return (
     <>
       {/* Hero */}
-        <section className="section-padding bg-gradient-hero">
+        <section className="section-padding bg-gradient-hero py-20">
           <div className="container-main">
             <div className="max-w-3xl mx-auto text-center">
               <span className="inline-block px-4 py-1.5 rounded-full bg-primary-light text-primary text-sm font-medium mb-4">

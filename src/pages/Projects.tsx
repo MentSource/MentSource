@@ -61,18 +61,18 @@ const Programs = () => {
   return (
     <>
       {/* Hero */}
-        <section className="section-padding bg-gradient-hero relative overflow-hidden">
+        <section className="section-padding bg-gradient-hero relative overflow-hidden py-20">
           <div className="container-main">
-            <div className="max-w-3xl mx-auto text-center">
+            <div className="flex flex-col items-center text-center">
               <span className="inline-block px-4 py-1.5 rounded-full bg-secondary-light text-[#ff5b3e] text-sm font-medium mb-4">
                 Learning Paths
               </span>
-              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+              <h1 className="max-w-3xl font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
                 Free Learning Programs for{" "}
                 <span className="text-[#5a85fe]">Everyone</span>
               </h1>
               <p className="text-lg text-primary-foreground/80 mb-8">
-                Structured learning paths designed by industry experts. From complete beginner to job-ready professional—all completely free.
+                Structured learning paths designed by industry experts. From complete beginner to job-ready professional all completely free.
               </p>
               <div className="flex flex-wrap justify-center gap-6 text-sm">
                 <div className="flex items-center gap-2 text-primary-foreground/80">
@@ -98,13 +98,13 @@ const Programs = () => {
         </section>
 
         {/* Programs Grid */}
-        <section className="section-padding">
+        <section >
           <div className="container-main">
-            <div className="grid gap-8">
+            <div className="grid gap-3">
               {programs.map((program) => (
                 <div
                   key={program.title}
-                  className="group relative overflow-hidden rounded-3xl bg-card border border-border/50 p-6 sm:p-8 card-hover"
+                  className="group relative overflow-hidden rounded-3xl bg-card border border-border/50 p-6 card-hover"
                 >
                   <div className="flex flex-col lg:flex-row gap-6 lg:gap-10">
                     {/* Icon & Title */}
@@ -167,7 +167,7 @@ const Programs = () => {
         </section>
 
         {/* CTA */}
-        <section className="section-padding bg-gradient-hero relative overflow-hidden">
+        <section className="section-padding bg-gradient-hero relative overflow-hidden py-16">
           <div className="container-main text-center">
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-primary-foreground mb-4">
               Not Sure Where to Start?

@@ -34,10 +34,10 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section className="section-padding overflow-hidden">
+    <section className="p-2 overflow-hidden">
       <div className="container-main">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto">
           <span className="inline-block px-4 py-1.5 rounded-full bg-primary text-white text-sm font-medium mb-4">
             Getting Started
           </span>
@@ -51,9 +51,9 @@ export function HowItWorks() {
         </div>
 
         {/* Steps */}
-        <div className="relative">
+        <div className="relative mt-[-50px]">
           {/* Connecting Line - Desktop */}
-          <div className="hidden lg:block absolute top-24 left-0 right-0 h-0.5 bg-gradient-to-r from-primary via-secondary to-accent" />
+          <div className="hidden lg:block absolute top-[100px] left-0 right-0 h-0.5 bg-gradient-to-r from-primary via-secondary to-accent" />
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
             {steps.map((step, index) => (

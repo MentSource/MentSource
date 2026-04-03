@@ -85,7 +85,7 @@ const Mentorship = () => {
   return (
     <>
       {/* Hero */}
-        <section className="section-padding bg-gradient-hero relative overflow-hidden">
+        <section className="section-padding bg-gradient-hero relative overflow-hidden py-20">
           <div className="absolute top-20 right-10 w-72 h-72 bg-secondary/20 blob float opacity-40" />
           <div className="container-main relative z-10">
             <div className="max-w-3xl mx-auto text-center">

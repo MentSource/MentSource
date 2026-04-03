@@ -2,10 +2,10 @@ import { Target, Globe, Sparkles, Users, Heart, Zap } from "lucide-react";
 
 export function BentoMission() {
   return (
-    <section className="section-padding bg-gradient-soft mb-10">
+    <section className="section-padding bg-gradient-soft mt-[-30px] ">
       <div className="container-main">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center mx-auto mb-4">
           <span className="inline-block px-4 py-1.5 rounded-full bg-primary text-white text-sm font-medium mb-4">
             Why We Exist
           </span>
@@ -14,7 +14,7 @@ export function BentoMission() {
             <span className="text-[#ff5b3e]">Free</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            We're building a community where anyone can learn, contribute, and grow—without financial or geographic barriers.
+            We're building a community where anyone can learn, contribute, and grow without financial or geographic barriers.
           </p>
         </div>
 
@@ -38,7 +38,7 @@ export function BentoMission() {
                 </p>
               </div>
               
-              <div className="mt-8 flex items-center gap-6">
+              <div className="flex items-center gap-6">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary-foreground">5+</div>
                   <div className="text-sm text-primary-foreground/60">Countries</div>

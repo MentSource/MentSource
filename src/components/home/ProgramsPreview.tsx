@@ -63,7 +63,7 @@ export function ProgramsPreview() {
     <section className="section-padding overflow-hidden">
       <div className="container-main">
         {/* Section Header */}
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12">
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-6">
           <div>
             <span className="inline-block px-4 py-1.5 rounded-full bg-primary text-white text-sm font-medium mb-4">
               Learning Paths
@@ -72,7 +72,7 @@ export function ProgramsPreview() {
               Explore Our{" "}
               <span className="text-[#ff5b3e]">Projects</span>
             </h2>
-            <p className="mt-4 text-lg text-muted-foreground max-w-2xl">
+            <p className="mt-4 text-lg text-muted-foreground">
               Structured learning paths designed by industry experts. Pick your interest and start learning today.
             </p>
           </div>
@@ -114,7 +114,7 @@ export function ProgramsPreview() {
               className="group relative flex-shrink-0 w-[320px] sm:w-[360px] snap-start"
               style={{ animationDelay: `${index * 0.05}s` }}
             >
-              <div className="h-full rounded-3xl bg-card border border-border/50 overflow-hidden card-hover">
+            <div className="h-full rounded-3xl bg-card border border-border/50 overflow-hidden card-hover">
                 {/* Gradient Header */}
                 <div className={`relative h-32 bg-gradient-to-br ${program.gradient} p-6`}>
                   <div className="absolute inset-0 bg-black/10" />

@@ -80,13 +80,13 @@ export function TestimonialsSection() {
           </p>
         </div>
 
-        {/* Masonry-style Grid */}
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+        {/* Uniform Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
             <div
               key={testimonial.name}
-              className={`break-inside-avoid group relative bg-card rounded-3xl p-6 border border-border/50 card-hover ${
-                testimonial.featured ? "md:p-8" : ""
+              className={`group relative bg-card rounded-3xl p-6 border border-border/50 card-hover h-full min-h-[15rem] flex flex-col ${
+                testimonial.featured ? "shadow-lg" : ""
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
@@ -111,11 +111,7 @@ export function TestimonialsSection() {
               </div>
 
               {/* Quote */}
-              <blockquote className={`text-foreground leading-relaxed mb-6 ${
-                testimonial.featured 
-                  ? "text-lg lg:text-xl font-display" 
-                  : "text-sm"
-              }`}>
+              <blockquote className="text-foreground leading-relaxed text-sm flex-1">
                 "{testimonial.quote}"
               </blockquote>
 

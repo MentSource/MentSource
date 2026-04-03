@@ -16,7 +16,7 @@ export function NewsletterSection() {
   };
 
   return (
-    <section className="py-16 relative overflow-hidden">
+    <section className="relative overflow-hidden">
       <div className="container-main">
         <div className="relative rounded-3xl bg-gradient-hero p-8 sm:p-12 lg:p-16 overflow-hidden">
           {/* Decorative Elements */}

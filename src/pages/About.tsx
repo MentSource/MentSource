@@ -63,7 +63,7 @@ const About = () => {
   return (
     <>
       {/* Hero */}
-        <section className="section-padding bg-gradient-hero relative overflow-hidden">
+        <section className="section-padding bg-gradient-hero relative overflow-hidden py-20">
           <div className="container-main">
             <div className="max-w-3xl mx-auto text-center">
               <span className="inline-block px-4 py-1.5 rounded-full bg-primary-light text-primary text-sm font-medium mb-4">
@@ -86,7 +86,7 @@ const About = () => {
         </section>
 
         {/* Mission & Vision */}
-        <section className="section-padding">
+        <section>
           <div className="container-main">
             <div className="grid md:grid-cols-2 gap-12">
               <div className="p-8 rounded-3xl bg-gradient-card border border-border/50">
