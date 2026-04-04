@@ -40,17 +40,17 @@ export function BentoMission() {
               
               <div className="flex items-center gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary-foreground">5+</div>
+                  <div className="text-3xl font-bold text-primary-foreground">3+</div>
                   <div className="text-sm text-primary-foreground/60">Countries</div>
                 </div>
                 <div className="w-px h-12 bg-primary-foreground/20" />
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary-foreground">40+</div>
+                  <div className="text-3xl font-bold text-primary-foreground">26+</div>
                   <div className="text-sm text-primary-foreground/60">Learners</div>
                 </div>
                 <div className="w-px h-12 bg-primary-foreground/20" />
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary-foreground">10+</div>
+                  <div className="text-3xl font-bold text-primary-foreground">8+</div>
                   <div className="text-sm text-primary-foreground/60">Mentors</div>
                 </div>
               </div>
@@ -68,7 +68,7 @@ export function BentoMission() {
                 Global Reach
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Breaking down geographical barriers to create a truly global learning community across 5+ countries.
+                Breaking down geographical barriers to create a truly global learning community across Africa and beyond.
               </p>
             </div>
           </div>
