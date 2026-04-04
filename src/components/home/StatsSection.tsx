@@ -2,11 +2,11 @@ import { TrendingUp, Users, BookOpen, Globe, Code, Award } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
 
 const stats = [
-  { value: 100, suffix: "+", label: "Active Learners", icon: Users, color: "primary" },
-  { value: 20, suffix: "+", label: "Volunteer Mentors", icon: Award, color: "secondary" },
-  { value: 5, suffix: "+", label: "Countries Reached", icon: Globe, color: "accent" },
-  { value: 20, suffix: "+", label: "Learning Paths", icon: BookOpen, color: "primary" },
-  { value: 30, suffix: "+", label: "Contributors", icon: Code, color: "secondary" },
+  { value: 26, suffix: "+", label: "Active Learners", icon: Users, color: "primary" },
+  { value: 8, suffix: "+", label: "Volunteer Mentors", icon: Award, color: "secondary" },
+  { value: 3, suffix: "+", label: "Countries Reached", icon: Globe, color: "accent" },
+  { value: 6, suffix: "+", label: "Learning Paths", icon: BookOpen, color: "primary" },
+  { value: 26, suffix: "+", label: "Contributors", icon: Code, color: "secondary" },
   { value: 95, suffix: "%", label: "Completion Rate", icon: TrendingUp, color: "accent" },
 ];
 

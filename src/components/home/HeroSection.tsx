@@ -27,7 +27,7 @@ export function HeroSection() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 mb-8 animate-fade-in">
               <span className="flex h-2 w-2 rounded-full bg-secondary animate-pulse" />
               <span className="text-sm font-medium text-primary-foreground/90">
-                40+ learners and growing. Reaching the unreached in Africa.
+                26+ learners and growing. Reaching the unreached in Africa and beyond.
               </span>
             </div>
 
@@ -113,7 +113,7 @@ export function HeroSection() {
                   <Users className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-foreground">10+ Mentors</p>
+                  <p className="text-sm font-semibold text-foreground">8+ Mentors</p>
                   <p className="text-xs text-muted-foreground">Ready to help</p>
                 </div>
               </div>
@@ -149,17 +149,17 @@ export function HeroSection() {
         <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-xl mx-auto mt-16 lg:hidden animate-fade-in stagger-4">
           <div className="flex flex-col items-center p-4 rounded-2xl bg-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/10">
             <Users className="h-6 w-6 text-secondary mb-2" />
-            <span className="text-2xl sm:text-3xl font-bold text-primary-foreground">40+</span>
+            <span className="text-2xl sm:text-3xl font-bold text-primary-foreground">26+</span>
             <span className="text-xs sm:text-sm text-primary-foreground/60">Learners</span>
           </div>
           <div className="flex flex-col items-center p-4 rounded-2xl bg-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/10">
             <BookOpen className="h-6 w-6 text-secondary mb-2" />
-            <span className="text-2xl sm:text-3xl font-bold text-primary-foreground">6+</span>
+            <span className="text-2xl sm:text-3xl font-bold text-primary-foreground">29+</span>
             <span className="text-xs sm:text-sm text-primary-foreground/60">Courses</span>
           </div>
           <div className="flex flex-col items-center p-4 rounded-2xl bg-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/10">
             <Code className="h-6 w-6 text-secondary mb-2" />
-            <span className="text-2xl sm:text-3xl font-bold text-primary-foreground">10+</span>
+            <span className="text-2xl sm:text-3xl font-bold text-primary-foreground">8+</span>
             <span className="text-xs sm:text-sm text-primary-foreground/60">Mentors</span>
           </div>
         </div>
