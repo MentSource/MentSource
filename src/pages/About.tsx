@@ -2,8 +2,8 @@ import { Heart, Target, Eye, Users, Award, Globe } from "lucide-react";
 
 const team = [
   {
-    name: "Peculiar C Umeh",
-    role: "Program Manager",
+    name: "Peculiar C. Umeh",
+    role: "Founder",
     bio: "Open-source advocate and community builder",
     image: "https://media.licdn.com/dms/image/v2/D4E03AQGyCnHyrthPtQ/profile-displayphoto-crop_800_800/B4EZuDvfpOIwAI-/0/1767441838409?e=1770854400&v=beta&t=2RMjJBBfnZwWs4JeeymvhxcGjlfFIgSESf588CQcgZw",
   },
@@ -51,12 +51,12 @@ const values = [
 ];
 
 const milestones = [
-  { year: "2026", title: "1K Community", description: "Growing stronger every day" },
-  { year: "2025", title: "Partnerships", description: "Partnered with major tech companies" },
+  { year: "2026", title: "30 Community Members", description: "Growing stronger every day" },
+  { year: "2025", title: "26+ Learners", description: "Partnered with major tech companies" },
   { year: "2024", title: "Open Source", description: "All curriculum made open source" },
-  { year: "2023", title: "Global Expansion", description: "Launched in 3+ countries" },
-  { year: "2022", title: "50+ Learners", description: "Reached our first major milestone" },
-  { year: "2021", title: "Founded", description: "Started with 10 learners and 5 mentors" },
+  { year: "2023", title: "Founded", description: "Started with 5 learners and 2 mentors" },
+  { year: "2022", title: "Expansion", description: "Ventured into Africa" },
+  { year: "2021", title: "Ideation", description: "Started as a side project" },
 ];
 
 const About = () => {
