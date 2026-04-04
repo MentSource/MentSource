@@ -41,7 +41,7 @@ const programs = [
     stack: "React, TypeScript, Kotlin Multiplatform, Android",
     color: "primary",
     gradient: "from-primary to-teal-700",
-    contributors: ,
+    contributors: 5,
     level: "Intermediate",
   },
 ];
