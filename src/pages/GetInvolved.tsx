@@ -5,33 +5,35 @@ import {
 } from "lucide-react";
 import { navigateTo } from "@/lib/utils";
 
+const MENTOR_FORM_URL = "https://forms.gle/afkQYSu8ApbypaEfA";
+
 const volunteerRoles = [
   {
     icon: Users,
     title: "Mentor",
     description: "Guide learners 1-on-1 through their journey. Just 2-4 hours per month.",
-    commitment: "2-4 hrs/month",
+    commitment: "Flexible",
     color: "primary",
   },
   {
     icon: Code,
     title: "Content Creator",
     description: "Help create courses, tutorials, and learning materials.",
-    commitment: "5-10 hrs/month",
+    commitment: "Flexible",
     color: "secondary",
   },
   {
     icon: PenTool,
     title: "Designer",
     description: "Improve our learning experience with better design and UX.",
-    commitment: "5-10 hrs/month",
+    commitment: "Flexible",
     color: "accent",
   },
   {
     icon: MessageCircle,
     title: "Community Moderator",
     description: "Help maintain our welcoming community spaces.",
-    commitment: "3-5 hrs/week",
+    commitment: "Flexible",
     color: "primary",
   },
   {
@@ -83,7 +85,7 @@ const GetInvolved = () => {
               <span className="text-gradient-primary">Difference</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Whether you have 2 hours or 20, there's a way for you to contribute. Join thousands of volunteers making education accessible worldwide.
+              Whether you have 1 or 20 hours, there's a way for you to contribute. Join thousands of volunteers making education accessible worldwide.
             </p>
           </div>
         </div>
@@ -119,9 +121,9 @@ const GetInvolved = () => {
                   <span className="text-xs font-medium px-2.5 py-1 rounded-full bg-muted text-muted-foreground">
                     {role.commitment}
                   </span>
-                  <Button variant="ghost" size="sm" className="opacity-0 group-hover:opacity-100 transition-opacity">
+                  {/* <Button variant="ghost" size="sm" className="opacity-0 group-hover:opacity-100 transition-opacity">
                     Apply <ArrowRight className="h-4 w-4" />
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
             ))}
@@ -129,8 +131,11 @@ const GetInvolved = () => {
           <div className="text-center mt-10">
             <Button variant="default" size="lg" asChild>
               <div>
+              <a href={MENTOR_FORM_URL} target="_blank" rel="noopener noreferrer">
+
                 Apply to Volunteer
-                <ArrowRight className="h-4 w-4" />
+                {/* <ArrowRight className="h-4 w-4" /> */}
+                </a>
               </div>
             </Button>
           </div>
@@ -166,17 +171,17 @@ const GetInvolved = () => {
               </div>
               <Button variant="default" size="lg" className="mt-8" asChild>
                 <div onClick={()=> navigateTo("/contact")} className="cursor-pointer">
-                  Become a Partner
-                  <ArrowRight className="h-4 w-4 ml-2" />
+                  Become a Partner: Email us at mentsource.1@gmail.com
+                  {/* <ArrowRight className="h-4 w-4 ml-2" /> */}
                 </div>
               </Button>
             </div>
             <div className="relative">
               <div className="aspect-square rounded-3xl bg-gradient-hero p-8 flex items-center justify-center">
                 <div className="text-center text-primary-foreground">
-                  <div className="text-6xl font-bold mb-2">50+</div>
+                  <div className="text-6xl font-bold mb-2">2+</div>
                   <div className="text-xl font-medium opacity-80">Partner Organizations</div>
-                  <div className="mt-6 text-sm opacity-60">Including Fortune 500 companies</div>
+                  {/* <div className="mt-6 text-sm opacity-60">Including Fortune 500 companies</div> */}
                 </div>
               </div>
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-secondary/20 blob" />

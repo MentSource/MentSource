@@ -5,6 +5,13 @@ import {
 } from "lucide-react";
 import { navigateTo } from "@/lib/utils";
 
+import godsWillImg from "@/assets/godswill.png";
+import temitopeImg from "@/assets/temitope.jpg";
+import hammedImg from "@/assets/hammed.jpg";
+
+const START_BUILDING_FORM_URL = "https://forms.gle/hTABxBPqHF1Wnxba6";
+const MENTOR_FORM_URL = "https://forms.gle/afkQYSu8ApbypaEfA";
+
 const benefits = [
   {
     icon: MessageCircle,
@@ -29,37 +36,37 @@ const benefits = [
 ];
 
 const mentors = [
+  // {
+  //   name: "Peculiar Umeh",
+  //   role: "Project Manager at Superbloom",
+  //   expertise: ["Project Management", "Open Source"],
+  //   image: pecImg,
+  //   rating: 5.0,
+  //   sessions: 50,
+  // },
   {
-    name: "Peculiar Umeh",
-    role: "Project Manager at Superbloom",
-    expertise: ["Project Management", "Open Source"],
-    image: "https://media.licdn.com/dms/image/v2/D4E03AQGyCnHyrthPtQ/profile-displayphoto-crop_800_800/B4EZuDvfpOIwAI-/0/1767441838409?e=1770854400&v=beta&t=2RMjJBBfnZwWs4JeeymvhxcGjlfFIgSESf588CQcgZw",
+    name: "GodsWill Jonathan",
+    role: "Senior Android Engineer at Gopaddi",
+    expertise: ["Kotlin Mutiplatform", "Android Development"],
+    image: godsWillImg,
     rating: 5.0,
-    sessions: 120,
+    sessions: 30,
   },
   {
-    name: "Michael Okonkwo",
-    role: "Data Scientist at Netflix",
-    expertise: ["Data Science", "Machine Learning"],
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
-    rating: 4.9,
-    sessions: 95,
-  },
-  {
-    name: "Emma Rodriguez",
-    role: "UX Lead at Spotify",
-    expertise: ["UI/UX Design", "Product Design"],
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&h=300&fit=crop&crop=face",
+    name: "Temitope Longe", 
+    role: "Frontend Engineer at Gozade ",
+    expertise: ["React", "TypeScript", "Vue.js"],
+    image: temitopeImg,
     rating: 5.0,
-    sessions: 84,
+    sessions: 20,
   },
   {
-    name: "James Park",
-    role: "Security Engineer at Meta",
-    expertise: ["Cybersecurity", "Cloud Security"],
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face",
-    rating: 4.8,
-    sessions: 67,
+    name: "Hammed Sanni",
+    role: "Frontend Developer at ",
+    expertise: ["React", "TypeScript"],
+    image: hammedImg,
+    rating: 3.0,
+    sessions: 10,
   },
 ];
 
@@ -92,7 +99,7 @@ const Mentorship = () => {
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 mb-6">
                 <Users className="h-4 w-4 text-secondary" />
                 <span className="text-sm font-medium text-primary-foreground/90">
-                  500+ Volunteer Mentors
+                  8+ Volunteer Mentors
                 </span>
               </span>
               <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6">
@@ -102,14 +109,27 @@ const Mentorship = () => {
                 Connect with experienced professionals who volunteer their time to guide the next generation. Free, personalized mentorship for everyone.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="hero-outline" size="xl">
+               
+                <Button variant="hero-outline" size="xl" asChild>
+                 <a
+                          href={START_BUILDING_FORM_URL}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                   Find a Mentor
                   <ArrowRight className="h-5 w-5" />
+                  </a>
                 </Button>
                 <Button size="xl" asChild>
+                  <a
+                          href={MENTOR_FORM_URL}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                   <div onClick={()=> navigateTo("/mentorship#become-mentor")} className="cursor-pointer">
                     Become a Mentor
                   </div>
+                  </a>
                 </Button>
               </div>
             </div>
@@ -243,10 +263,16 @@ const Mentorship = () => {
                   ))}
                 </ul>
                 <Button variant="hero-outline" size="lg" className="cursor-pointer border-secondary-foreground/30 text-secondary-foreground hover:bg-secondary-foreground hover:text-[#ff5b3e]" asChild>
+                <a
+                        href={MENTOR_FORM_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
                   <div>
                     Apply to Be a Mentor
                     <ArrowRight className="h-4 w-4" />
                   </div>
+                  </a>
                 </Button>
               </div>
             </div>

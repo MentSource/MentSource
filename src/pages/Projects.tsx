@@ -6,6 +6,8 @@ import {
   GraduationCap
 } from "lucide-react";
 
+const START_BUILDING_FORM_URL = "https://forms.gle/hTABxBPqHF1Wnxba6";
+
 const programs = [
   {
     icon: HeartPulse, // or Stethoscope
@@ -15,7 +17,7 @@ const programs = [
     topics: ["Python", "Django", "REST APIs", "Healthcare Tech"],
     color: "primary",
     gradient: "from-primary to-primary-dark",
-    contributors: 25,
+    contributors: 5,
     level: "Beginner to Advanced",
     duration: "8 Weeks",
   },
@@ -27,7 +29,7 @@ const programs = [
     topics: ["Kotlin", "Android", "Firebase", "UI/UX Design"],
     color: "secondary",
     gradient: "from-base to-orange-600",
-    contributors: 40,
+    contributors: 10,
     level: "Beginner Friendly",
     duration: "6 Weeks",
 
@@ -40,7 +42,7 @@ const programs = [
     topics: ["React", "TypeScript", "GraphQL", "Tailwind CSS"],
     color: "accent",
     gradient: "from-accent to-indigo-700",
-    contributors: 60,
+    contributors: 3,
     level: "All Levels",
     duration: "Ongoing",
   },
@@ -52,7 +54,7 @@ const programs = [
     topics: ["React", "TypeScript", "Canvas API", "WebGL"],
     color: "primary",
     gradient: "from-primary to-teal-700",
-    contributors: 30,
+    contributors: 5,
     level: "Intermediate",
     duration: "10 Weeks",
   },
@@ -77,11 +79,11 @@ const Programs = () => {
               <div className="flex flex-wrap justify-center gap-6 text-sm">
                 <div className="flex items-center gap-2 text-primary-foreground/80">
                   <BookOpen className="h-5 w-5 text-primary" />
-                  <span>50+ Courses</span>
+                  <span>28+ Courses</span>
                 </div>
                 <div className="flex items-center gap-2 text-primary-foreground/80">
                   <Users className="h-5 w-5 text-primary" />
-                  <span>10,000+ Learners</span>
+                  <span>26+ Learners</span>
                 </div>
                 <div className="flex items-center gap-2 text-primary-foreground/80">
                   <Star className="h-5 w-5 text-primary" />
@@ -153,10 +155,14 @@ const Programs = () => {
                         </div>
                       </div>
                       <Button variant="default" asChild>
-                        <div>
+                        <a
+                          href={START_BUILDING_FORM_URL}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           Start Building
                           <ArrowRight className="h-4 w-4" />
-                        </div>
+                        </a>
                       </Button>
                     </div>
                   </div>

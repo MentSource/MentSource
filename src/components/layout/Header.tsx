@@ -1,14 +1,16 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { Menu, X, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn, navigateTo } from "@/lib/utils";
+import { useChatbot } from "@/components/chat/ChatbotContext";
 
 const navigation = [
   { name: "Home", href: "/", icon: null },
   { name: "About Us", href: "/about", icon: null },
   { name: "Projects", href: "/projects", icon: null },
   { name: "Mentorship", href: "/mentorship", icon: null },
+  { name: "Internship", href: "/internship", icon: null },
   { name: "Contact", href: "/contact", icon: null },
 ];
 
@@ -16,6 +18,7 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  const { openDonateChat } = useChatbot();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,7 +49,7 @@ export function Header() {
             className="cursor-pointer flex items-center gap-2 group flex-shrink-0"
             aria-label="MentSource Home"
           >
-            <img src="./logo4.png" className="h-[50px] w-[60px]" alt="MentSource Logo" />
+            <img src="/logo3.jpg" className="h-[50px] w-[60px]" alt="MentSource Logo" />
           </div>
 
           {/* Desktop Navigation */}
@@ -93,7 +96,7 @@ export function Header() {
               asChild
               className="gap-2 shadow-lg hover:shadow-xl transition-shadow bg-base"
             >
-              <div onClick={()=> navigateTo("/")} className="flex items-center gap-2 cursor-pointer">
+              <div onClick={openDonateChat} className="flex items-center gap-2 cursor-pointer">
                 <Heart className="h-4 w-4" />
                 <span>Donate</span>
               </div>

@@ -156,9 +156,9 @@ export function ProgramsPreview() {
                   </div>
 
                   {/* Hover CTA */}
-                  <div className="mt-4 flex items-center gap-2 text-sm font-medium text-primary opacity-0 translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all">
+                  {/* <div className="mt-4 flex items-center gap-2 text-sm font-medium text-primary opacity-0 translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all">
                     Start Learning <ArrowRight className="h-4 w-4" />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

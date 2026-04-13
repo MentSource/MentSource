@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import heroCommunity from "@/assets/hero-community.jpg";
 import { navigateTo } from "@/lib/utils";
 
+const JOIN_COMMUNITY_FORM_URL = "https://forms.gle/hTABxBPqHF1Wnxba6";
+
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-hero">
@@ -19,17 +21,17 @@ export function HeroSection() {
       <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-accent/10 blob float opacity-30" style={{ animationDelay: "-5s" }} />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-primary-foreground/5 to-transparent rounded-full" />
 
-      <div className="container-main relative z-10 py-20 lg:py-32">
+      <div className="container-main relative z-10 py-1 lg:py-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Column - Content */}
           <div className="text-center lg:text-left">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 mb-8 animate-fade-in">
+            {/* <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 mb-8 animate-fade-in">
               <span className="flex h-2 w-2 rounded-full bg-secondary animate-pulse" />
               <span className="text-sm font-medium text-primary-foreground/90">
                 26+ learners and growing. Reaching the unreached in Africa and beyond.
               </span>
-            </div>
+            </div> */}
 
             {/* Headline */}
             <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-in stagger-1">
@@ -56,10 +58,14 @@ export function HeroSection() {
                 </div>
               </Button>
               <Button variant="warm" size="xl" asChild className="group">
-                <div onClick={()=> navigateTo("/mentorship")} className="cursor-pointer">
+                <a
+                  href={JOIN_COMMUNITY_FORM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Play className="h-5 w-5 transition-transform group-hover:scale-110" />
-                  Join the community
-                </div>
+                  Join our community
+                </a>
               </Button>
             </div>
 
