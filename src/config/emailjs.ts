@@ -7,4 +7,4 @@ export const EMAILJS_CONFIG = {
 };
 
 // Optional: Email where you want to receive messages
-export const RECIPIENT_EMAIL = "mentsource.1@gmail.com";
+export const RECIPIENT_EMAIL = "mentsource_1@gmail.com";

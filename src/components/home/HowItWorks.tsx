@@ -1,4 +1,5 @@
 import { BookOpen, Users, Award, Globe } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const steps = [
   {
@@ -7,6 +8,7 @@ const steps = [
     title: "Explore Open Resources",
     description: "Dive straight into open-source learning materials, projects, and documentation—no sign-up required.",
     color: "primary",
+    href: "https://chaoss.moodlecloud.com",
   },
   {
     icon: BookOpen,
@@ -14,6 +16,7 @@ const steps = [
     title: "Choose Your Path",
     description: "Discover learning tracks, real-world projects, and contribution areas that match your interests.",
     color: "secondary",
+    href: "/documentation",
   },
   {
     icon: Users,
@@ -21,6 +24,7 @@ const steps = [
     title: "Collaborate & Learn",
     description: "Learn in public, collaborate with contributors, and get guidance from experienced community members.",
     color: "accent",
+    href: "/community",
   },
   {
     icon: Award,
@@ -28,6 +32,7 @@ const steps = [
     title: "Contribute & Give Back",
     description: "Apply what you’ve learned by contributing to projects, mentoring others, and growing the community.",
     color: "primary",
+    href: "/mentorship",
   },
 ];
 
@@ -75,15 +80,48 @@ export function HowItWorks() {
 
                 {/* Card */}
                 <div className="pt-12 lg:pt-32">
-                  <div 
-                    className={`relative p-6 rounded-2xl border transition-all duration-300 group-hover:-translate-y-2 ${
-                      step.color === "primary"
-                        ? "bg-primary-light/30 border-primary/20 hover:border-primary/40"
-                        : step.color === "secondary"
-                        ? "bg-secondary-light/30 border-secondary/20 hover:border-secondary/40"
-                        : "bg-accent-light/30 border-accent/20 hover:border-accent/40"
-                    }`}
-                  >
+                  {step.href.startsWith("http") ? (
+                    <a
+                      href={step.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`block relative p-6 rounded-2xl border transition-all duration-300 group-hover:-translate-y-2 cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-primary/40 focus-visible:ring-offset-2 focus-visible:ring-offset-background ${
+                        step.color === "primary"
+                          ? "bg-primary-light/30 border-primary/20 hover:border-primary/40"
+                          : step.color === "secondary"
+                          ? "bg-secondary-light/30 border-secondary/20 hover:border-secondary/40"
+                          : "bg-accent-light/30 border-accent/20 hover:border-accent/40"
+                      }`}
+                    >
+                      <div 
+                        className={`inline-flex items-center justify-center w-14 h-14 rounded-xl mb-4 ${
+                          step.color === "primary"
+                            ? "bg-primary text-primary-foreground"
+                            : step.color === "secondary"
+                            ? "bg-base text-secondary-foreground"
+                            : "bg-accent text-accent-foreground"
+                        }`}
+                      >
+                        <step.icon className="h-7 w-7" />
+                      </div>
+                      <h3 className="font-display text-xl font-semibold text-foreground mb-2">
+                        {step.title}
+                      </h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        {step.description}
+                      </p>
+                    </a>
+                  ) : (
+                    <Link
+                      to={step.href}
+                      className={`block relative p-6 rounded-2xl border transition-all duration-300 group-hover:-translate-y-2 cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-primary/40 focus-visible:ring-offset-2 focus-visible:ring-offset-background ${
+                        step.color === "primary"
+                          ? "bg-primary-light/30 border-primary/20 hover:border-primary/40"
+                          : step.color === "secondary"
+                          ? "bg-secondary-light/30 border-secondary/20 hover:border-secondary/40"
+                          : "bg-accent-light/30 border-accent/20 hover:border-accent/40"
+                      }`}
+                    >
                     <div 
                       className={`inline-flex items-center justify-center w-14 h-14 rounded-xl mb-4 ${
                         step.color === "primary"
@@ -101,7 +139,8 @@ export function HowItWorks() {
                     <p className="text-muted-foreground text-sm leading-relaxed">
                       {step.description}
                     </p>
-                  </div>
+                    </Link>
+                  )}
                 </div>
 
                 {/* Arrow - Desktop */}
