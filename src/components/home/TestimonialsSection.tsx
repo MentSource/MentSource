@@ -11,42 +11,42 @@ const testimonials = [
     rating: 5,
     featured: true,
   },
-  {
-    quote: "The open-source contribution program helped me build real skills and confidence. Now I'm contributing to projects used by millions.",
-    name: "Carlos Rodriguez",
-    role: "Full Stack Developer",
-    company: "Shopify",
-    location: "Mexico City",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
-    rating: 5,
-    featured: false,
-  },
-  {
-    quote: "As a career changer in my 40s, I was scared to start learning to code. The supportive community here made all the difference. Age is truly just a number!",
-    name: "Priya Sharma",
-    role: "Data Analyst",
-    company: "Infosys",
-    location: "Mumbai, India",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=150&h=150&fit=crop&crop=face",
-    rating: 5,
-    featured: false,
-  },
+  // {
+  //   quote: "The open-source contribution program helped me build real skills and confidence. Now I'm contributing to projects used by millions.",
+  //   name: "Carlos Rodriguez",
+  //   role: "Full Stack Developer",
+  //   company: "Shopify",
+  //   location: "Mexico City",
+  //   image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+  //   rating: 5,
+  //   featured: false,
+  // },
+  // {
+  //   quote: "As a career changer in my 40s, I was scared to start learning to code. The supportive community here made all the difference. Age is truly just a number!",
+  //   name: "Priya Sharma",
+  //   role: "Data Analyst",
+  //   company: "Infosys",
+  //   location: "Mumbai, India",
+  //   image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=150&h=150&fit=crop&crop=face",
+  //   rating: 5,
+  //   featured: false,
+  // },
+  // {
+  //   quote: "Being a mentor at MentSource is incredibly rewarding. Seeing learners grow and achieve their goals reminds me why I fell in love with technology.",
+  //   name: "Peculiar C Umeh",
+  //   role: "Project Manager",
+  //   company: "Superbloom",
+  //   location: "New York",
+  //   image: "https://media.licdn.com/dms/image/v2/D4E03AQGyCnHyrthPtQ/profile-displayphoto-crop_800_800/B4EZuDvfpOIwAI-/0/1767441838409?e=1770854400&v=beta&t=2RMjJBBfnZwWs4JeeymvhxcGjlfFIgSESf588CQcgZw",
+  //   rating: 5,
+  //   featured: true,
+  // },
   {
     quote: "Being a mentor at MentSource is incredibly rewarding. Seeing learners grow and achieve their goals reminds me why I fell in love with technology.",
-    name: "Peculiar C Umeh",
-    role: "Project Manager",
-    company: "Superbloom",
-    location: "New York",
-    image: "https://media.licdn.com/dms/image/v2/D4E03AQGyCnHyrthPtQ/profile-displayphoto-crop_800_800/B4EZuDvfpOIwAI-/0/1767441838409?e=1770854400&v=beta&t=2RMjJBBfnZwWs4JeeymvhxcGjlfFIgSESf588CQcgZw",
-    rating: 5,
-    featured: true,
-  },
-  {
-    quote: "From complete beginner to landing my first dev job in 8 months. The structured learning paths and mentor support made it possible.",
     name: "Emma Thompson",
     role: "Junior Developer",
     company: "Basecamp",
-    location: "London, UK",
+    location: "Africa, Togo",
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face",
     rating: 5,
     featured: false,
@@ -55,8 +55,8 @@ const testimonials = [
     quote: "The community here is unlike anything I've experienced. Everyone genuinely wants to help each other succeed.",
     name: "Ahmed Hassan",
     role: "Cloud Engineer",
-    company: "Microsoft",
-    location: "Cairo, Egypt",
+    company: "Mixapp",
+    location: "Nigeria, Kano",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
     rating: 5,
     featured: false,
@@ -71,7 +71,7 @@ export function TestimonialsSection() {
           <span className="inline-block px-4 py-1.5 rounded-full bg-accent-light text-accent text-sm font-medium mb-4">
             Community Stories
           </span>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+          <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-6">
             Voices From Our{" "}
             <span className="text-gradient-primary">Community</span>
           </h2>

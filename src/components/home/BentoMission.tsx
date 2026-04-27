@@ -1,17 +1,17 @@
-import { Target, Globe, Sparkles, Users, Heart, Zap } from "lucide-react";
+ 
 
 export function BentoMission() {
   return (
-    <section className="section-padding bg-gradient-soft mt-[-30px] ">
+    <section className="section-padding bg-[#f5fbfa] mt-[-30px] ">
       <div className="container-main">
         {/* Section Header */}
         <div className="text-center mx-auto mb-4">
           <span className="inline-block px-4 py-1.5 rounded-full bg-primary text-white text-sm font-medium mb-4">
             Why We Exist
           </span>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Knowledge Should Be{" "}
-            <span className="text-[#ff5b3e]">Free</span>
+          <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-6">
+            Knowledge Should Be Free{" "}
+            {/* <span className="text-[#ff5b3e]"></span> */}
           </h2>
           <p className="text-lg text-muted-foreground">
             We're building a community where anyone can learn, contribute, and grow without financial or geographic barriers.
@@ -27,9 +27,9 @@ export function BentoMission() {
             
             <div className="relative z-10 h-full flex flex-col justify-between">
               <div>
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary-foreground/10 backdrop-blur-sm mb-6">
-                  <Target className="h-8 w-8 text-primary-foreground" />
-                </div>
+                {/* <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary-foreground/10 backdrop-blur-sm mb-6"> */}
+                  {/* <Target className="h-8 w-8 text-primary-foreground" /> */}
+                {/* </div> */}
                 <h3 className="font-display text-2xl lg:text-4xl font-bold text-primary-foreground mb-4">
                   Our Mission
                 </h3>
@@ -58,14 +58,14 @@ export function BentoMission() {
           </div>
 
           {/* Global Reach */}
-          <div className="relative overflow-hidden rounded-3xl bg-card border border-border/50 p-6 lg:p-8 card-hover group">
+          <div className="relative overflow-hidden rounded-3xl bg-[#f5fbfa] border border-border/50 p-6 lg:p-8 card-hover group">
             <div className="absolute -top-10 -right-10 w-32 h-32 bg-secondary/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500" />
             <div className="relative z-10">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-secondary-light mb-4">
-                <Globe className="h-6 w-6 text-secondary" />
-              </div>
+              {/* <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-secondary-light mb-4">
+                {/* <Globe className="h-6 w-6 text-secondary" /> */}
+              {/* </div> */} 
               <h3 className="font-display text-xl font-semibold text-foreground mb-2">
-                Global Reach
+                Our Reach 
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 Breaking down geographical barriers to create a truly global learning community across Africa and beyond.
@@ -77,9 +77,9 @@ export function BentoMission() {
           <div className="relative overflow-hidden rounded-3xl bg-card border border-border/50 p-6 lg:p-8 card-hover group">
             <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-accent/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500" />
             <div className="relative z-10">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-accent-light mb-4">
-                <Sparkles className="h-6 w-6 text-accent" />
-              </div>
+              {/* <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-accent-light mb-4">
+                {/* <Sparkles className="h-6 w-6 text-accent" /> */}
+              {/* </div>  */}
               <h3 className="font-display text-xl font-semibold text-foreground mb-2">
                 Open Source First
               </h3>
@@ -93,9 +93,9 @@ export function BentoMission() {
           <div className="relative overflow-hidden rounded-3xl bg-secondary p-6 lg:p-8 card-hover group">
             <div className="absolute -top-10 -right-10 w-32 h-32 bg-primary-foreground/10 rounded-full blur-2xl" />
             <div className="relative z-10">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary-foreground/10 backdrop-blur-sm mb-4">
-                <Users className="h-6 w-6 text-secondary-foreground" />
-              </div>
+              {/* <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary-foreground/10 backdrop-blur-sm mb-4">
+                {/* <Users className="h-6 w-6 text-secondary-foreground" /> */}
+              {/* </div>  */}
               <h3 className="font-display text-xl font-semibold text-secondary-foreground mb-2">
                 Community Driven
               </h3>
@@ -109,9 +109,9 @@ export function BentoMission() {
           <div className="relative overflow-hidden rounded-3xl bg-card border border-border/50 p-6 lg:p-8 card-hover group">
             <div className="absolute -top-10 -left-10 w-32 h-32 bg-primary/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500" />
             <div className="relative z-10">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary-light mb-4">
+              {/* <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary-light mb-4">
                 <Heart className="h-6 w-6 text-primary" />
-              </div>
+              </div> */}
               <h3 className="font-display text-xl font-semibold text-foreground mb-2">
                 Volunteer Led
               </h3>
@@ -125,9 +125,9 @@ export function BentoMission() {
           <div className="relative overflow-hidden rounded-3xl bg-accent p-6 lg:p-8 card-hover group">
             <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-primary-foreground/10 rounded-full blur-2xl" />
             <div className="relative z-10">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary-foreground/10 backdrop-blur-sm mb-4">
+              {/* <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary-foreground/10 backdrop-blur-sm mb-4">
                 <Zap className="h-6 w-6 text-accent-foreground" />
-              </div>
+              </div> */}
               <h3 className="font-display text-xl font-semibold text-accent-foreground mb-2">
                 Always Evolving
               </h3>

@@ -2,6 +2,7 @@ import { Heart, Target, Eye, Users, Award, Globe } from "lucide-react";
 
 import pecImg from "@/assets/pec.png";
 import hammedImg from "@/assets/hammed.jpg";
+import temitopeImg from "@/assets/temitope.jpg";
 
 const team = [
   {
@@ -9,6 +10,12 @@ const team = [
     role: "Founder",
     bio: "Open-source advocate and community builder",
     image: pecImg,
+  },
+  {
+    name: "Temitope Longe", 
+    role: "Frontend Engineer at Gozade ",
+    expertise: "Open-source contributor and mentor",
+    image: temitopeImg,
   },
   {
     name: "Hammed Sanni",

@@ -1,16 +1,22 @@
 import { Button } from "@/components/ui/button";
-import {
-  Palette,
-  ArrowRight, Clock, Users, Star, BookOpen,
-  HeartPulse,
-  GraduationCap
-} from "lucide-react";
+import { Link } from "react-router-dom";
 
 const START_BUILDING_FORM_URL = "https://forms.gle/hTABxBPqHF1Wnxba6";
 
 const programs = [
+
   {
-    icon: HeartPulse, // or Stethoscope
+    title: "Good First Issues",
+    description: "Simplifying healthcare management through smart, accessible digital solutions.",
+    stack: "",
+    topics: ["AI", "ML", "Python", "JavaScript", "TypeScript", "React", "Node.js", "Next.js", "Tailwind CSS", "HTML", "CSS", "Etc"],
+    color: "primary",
+    gradient: "from-primary to-primary-dark",
+    contributors: "Many",
+    level: "Beginner to Advanced",
+    duration: "Ongoing",
+  },
+  {
     title: "HelCare",
     description: "Simplifying healthcare management through smart, accessible digital solutions.",
     stack: "Python",
@@ -22,7 +28,6 @@ const programs = [
     duration: "8 Weeks",
   },
   {
-    icon: GraduationCap,
     title: "LEMAs",
     description: "Empowering educational systems with scalable and efficient learning tools.",
     stack: "Kotlin",
@@ -35,7 +40,6 @@ const programs = [
 
   },
   {
-    icon: Users,
     title: "MENTSOURCE",
     description: "Fostering a thriving open-source community for learning, mentorship, and collaboration.",
     stack: "React",
@@ -47,7 +51,6 @@ const programs = [
     duration: "Ongoing",
   },
   {
-    icon: Palette,
     title: "SmartArt",
     description: "Transforming digital art through modern, intuitive creative experiences.",
     stack: "React, TypeScript",
@@ -78,15 +81,12 @@ const Programs = () => {
               </p>
               <div className="flex flex-wrap justify-center gap-6 text-sm">
                 <div className="flex items-center gap-2 text-primary-foreground/80">
-                  <BookOpen className="h-5 w-5 text-primary" />
                   <span>28+ Courses</span>
                 </div>
                 <div className="flex items-center gap-2 text-primary-foreground/80">
-                  <Users className="h-5 w-5 text-primary" />
                   <span>26+ Learners</span>
                 </div>
                 <div className="flex items-center gap-2 text-primary-foreground/80">
-                  <Star className="h-5 w-5 text-primary" />
                   <span>4.8 Avg Rating</span>
                 </div>
               </div>
@@ -110,17 +110,7 @@ const Programs = () => {
                 >
                   <div className="flex flex-col lg:flex-row gap-6 lg:gap-10">
                     {/* Icon & Title */}
-                    <div className="flex items-start gap-4 lg:w-1/3">
-                      <div
-                        className={`shrink-0 w-14 h-14 rounded-2xl flex items-center justify-center transition-transform group-hover:scale-110 ${program.color === "primary"
-                            ? "bg-primary-light text-primary"
-                            : program.color === "secondary"
-                              ? "bg-secondary-light text-secondary"
-                              : "bg-accent-light text-accent"
-                          }`}
-                      >
-                        <program.icon className="h-7 w-7" />
-                      </div>
+                    <div className="flex items-start gap-4 lg:w-56 lg:shrink-0">
                       <div>
                         <h3 className="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors">
                           {program.title}
@@ -132,7 +122,7 @@ const Programs = () => {
                     </div>
 
                     {/* Description & Topics */}
-                    <div className="lg:w-1/3">
+                    <div className="lg:flex-1">
                       <p className="text-muted-foreground mb-4">{program.description}</p>
                       <div className="flex flex-wrap gap-2">
                         {program.topics.map((topic) => (
@@ -147,23 +137,27 @@ const Programs = () => {
                     </div>
 
                     {/* Stats & CTA */}
-                    <div className="lg:w-1/3 flex flex-col sm:flex-row lg:flex-col gap-4 lg:items-end justify-between">
+                    <div className="lg:w-56 lg:shrink-0 flex flex-col sm:flex-row lg:flex-col gap-4 lg:items-end justify-between">
                       <div className="flex flex-wrap gap-4 text-sm">
                         <div className="flex items-center gap-1.5">
-                          <Clock className="h-4 w-4 text-muted-foreground" />
                           <span className="text-foreground font-medium">{program.duration}</span>
                         </div>
                       </div>
-                      <Button variant="default" asChild>
-                        <a
-                          href={START_BUILDING_FORM_URL}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Start Building
-                          <ArrowRight className="h-4 w-4" />
-                        </a>
-                      </Button>
+                      {program.title === "Good First Issues" ? (
+                        <Button variant="default" asChild>
+                          <Link to="/documentation">Start Building</Link>
+                        </Button>
+                      ) : (
+                        <Button variant="default" asChild>
+                          <a
+                            href={START_BUILDING_FORM_URL}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Start Building
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -183,7 +177,6 @@ const Programs = () => {
             </p>
             <Button variant="hero-outline" size="lg">
               Explore our doc
-              <ArrowRight className="h-4 w-4" />
             </Button>
           </div>
           <div className="absolute bottom-0 left-0 right-0">

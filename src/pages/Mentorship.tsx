@@ -20,13 +20,13 @@ const benefits = [
   },
   {
     icon: Target,
-    title: "Goal Setting",
-    description: "Set clear, achievable goals with your mentor's guidance",
+    title: "Hands-on Projects",
+    description: "Select a project, achievable goals with your mentor's guidance",
   },
   {
     icon: Calendar,
-    title: "Flexible Scheduling",
-    description: "Meet at times that work for both you and your mentor",
+    title: "Collaborative Learning",
+    description: "Collaborate with other learners and mentors, learn and grow together",
   },
   {
     icon: Globe,

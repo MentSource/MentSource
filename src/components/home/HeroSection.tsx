@@ -46,7 +46,7 @@ export function HeroSection() {
 
             {/* Subheadline */}
             <p className="text-lg sm:text-xl text-primary-foreground/80 max-w-xl mx-auto lg:mx-0 mb-8 animate-fade-in stagger-2">
-              MentSource drives open source innovation, enabling impactful collaborations and fostering a thriving global community of contributors.We strive to cultivate a global network of developers passionate about open source. Training and mentoring the next generation of open source contributors, empowering them to make meaningful contributions to projects that matter. We believe in the power of open source to drive innovation, promote collaboration, and create a more inclusive tech ecosystem.
+            MentSource drives open source innovation, enabling impactful collaborations and promoting a thriving global community of contributors. We strive to cultivate a network of developers passionate about open source. We train and mentor the next generation of open source contributors, offering one-on-one guidance, hands-on projects, and support to help them make meaningful contributions to projects that matter. We believe in the power of open source to drive innovation, promote collaboration, and create a more inclusive tech ecosystem.
             </p>
 
             {/* CTA Buttons */}
@@ -73,9 +73,9 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row items-center gap-4 animate-fade-in stagger-4">
               <div className="flex -space-x-3">
                 {[
-                  "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face",
-                  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
-                  "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=100&h=100&fit=crop&crop=face",
+                  // "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face",
+                  // "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+                  // "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=100&h=100&fit=crop&crop=face",
                   "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
                 ].map((src, i) => (
                   <img
@@ -86,7 +86,7 @@ export function HeroSection() {
                   />
                 ))}
                 <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-xs font-bold text-secondary-foreground border-2 border-primary">
-                  +9K
+                  +
                 </div>
               </div>
               <div className="text-primary-foreground/80">
@@ -154,17 +154,17 @@ export function HeroSection() {
         {/* Quick Stats - Mobile */}
         <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-xl mx-auto mt-16 lg:hidden animate-fade-in stagger-4">
           <div className="flex flex-col items-center p-4 rounded-2xl bg-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/10">
-            <Users className="h-6 w-6 text-secondary mb-2" />
+            {/* <Users className="h-6 w-6 text-secondary mb-2" /> */}
             <span className="text-2xl sm:text-3xl font-bold text-primary-foreground">26+</span>
             <span className="text-xs sm:text-sm text-primary-foreground/60">Learners</span>
           </div>
           <div className="flex flex-col items-center p-4 rounded-2xl bg-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/10">
-            <BookOpen className="h-6 w-6 text-secondary mb-2" />
+            {/* <BookOpen className="h-6 w-6 text-secondary mb-2" /> */}
             <span className="text-2xl sm:text-3xl font-bold text-primary-foreground">29+</span>
             <span className="text-xs sm:text-sm text-primary-foreground/60">Courses</span>
           </div>
           <div className="flex flex-col items-center p-4 rounded-2xl bg-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/10">
-            <Code className="h-6 w-6 text-secondary mb-2" />
+            {/* <Code className="h-6 w-6 text-secondary mb-2" /> */}
             <span className="text-2xl sm:text-3xl font-bold text-primary-foreground">8+</span>
             <span className="text-xs sm:text-sm text-primary-foreground/60">Mentors</span>
           </div>

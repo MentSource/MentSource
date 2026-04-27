@@ -3,12 +3,15 @@ import { navigateTo } from "@/lib/utils";
 
 const footerLinks = {
   organization: [
+    { name: "Home", href: "/home" },
     { name: "About Us", href: "/about" },
     { name: "Our Mentors", href: "/about" },
+    { name: "Documentation", href: "/documentation" },
   ],
   programs: [
     { name: "Learning Paths", href: "/projects" },
     { name: "Mentorship", href: "/mentorship" },
+    { name: "Internship", href: "/internship" },
   ],
   getInvolved: [
     { name: "Become a Mentor", href: "/mentorship#become-mentor" },

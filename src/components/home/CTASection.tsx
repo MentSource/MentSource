@@ -1,6 +1,7 @@
 import { ArrowRight, Heart, Users, BookOpen, Rocket } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { navigateTo } from "@/lib/utils";
+import temitopeImg from "@/assets/temitope.jpg";
 
 export function CTASection() {
   return (
@@ -21,7 +22,7 @@ export function CTASection() {
                   Start Your Journey
                 </div>
                 
-                <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
+                <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-primary-foreground mb-6">
                   Ready to Transform Your Future?
                 </h2>
                 <p className="text-lg text-primary-foreground/80 mb-8 max-w-lg">
@@ -47,17 +48,17 @@ export function CTASection() {
               {/* Testimonial Quote */}
               <div className="mt-10 pt-8 border-t border-primary-foreground/20">
                 <p className="text-primary-foreground/70 italic mb-4">
-                  "Being a mentor at MentSource is incredibly rewarding"
+                  "Being a mentor at MentSource is incredibly rewarding. It is an oppportunity to give back to the community and help others grow."
                 </p>
                 <div className="flex items-center gap-3">
                   <img
-                    src="https://media.licdn.com/dms/image/v2/D4E03AQGyCnHyrthPtQ/profile-displayphoto-crop_800_800/B4EZuDvfpOIwAI-/0/1767441838409?e=1770854400&v=beta&t=2RMjJBBfnZwWs4JeeymvhxcGjlfFIgSESf588CQcgZw"
-                    alt="Peculiar C Umeh"
+                    src={temitopeImg}
+                    alt="Temitope Longe"
                     className="w-10 h-10 rounded-full object-cover"
                   />
                   <div>
-                    <p className="text-sm font-medium text-primary-foreground">Peculiar C Umeh</p>
-                    <p className="text-xs text-primary-foreground/60">Founder</p>
+                    <p className="text-sm font-medium text-primary-foreground">Temitope Longe</p>
+                    <p className="text-xs text-primary-foreground/60">MentSource Mentor</p>
                   </div>
                 </div>
               </div>
