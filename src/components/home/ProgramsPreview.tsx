@@ -1,11 +1,11 @@
-import { ArrowRight, Palette, Users, HeartPulse, GraduationCap, Languages } from "lucide-react";
+import { ArrowRight, Users, Languages } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useRef } from "react";
 import { navigateTo } from "@/lib/utils";
 
 const programs = [
   {
-    icon: HeartPulse, // or Stethoscope
+    // icon: HeartPulse, // or Stethoscope
     title: "HelCare",
     description: "Simplifying healthcare management through smart, accessible digital solutions.",
     stack: "React, TypeScript, Kotlin Multiplatform, Android",
@@ -15,7 +15,7 @@ const programs = [
     level: "Beginner to Advanced",
   },
   {
-    icon: GraduationCap,
+    // icon: GraduationCap,
     title: "LEMAs",
     description: "Empowering educational systems with scalable and efficient learning tools.",
     stack: "Kotlin, React TypeScript,Node.js, ",
@@ -25,7 +25,7 @@ const programs = [
     level: "Beginner Friendly",
   },
   {
-    icon: Users,
+    // icon: Users,
     title: "MENTSOURCE",
     description: "Fostering a thriving open-source community for learning, mentorship, and collaboration.",
     stack: "React TypeScript, Node.js,",
@@ -35,7 +35,7 @@ const programs = [
     level: "All Levels",
   },
   {
-    icon: Palette,
+    // icon: Palette,
     title: "SmartArt",
     description: "Transforming digital art through modern, intuitive creative experiences.",
     stack: "React, TypeScript, Kotlin Multiplatform, Android",
@@ -68,9 +68,9 @@ export function ProgramsPreview() {
             <span className="inline-block px-4 py-1.5 rounded-full bg-primary text-white text-sm font-medium mb-4">
               Learning Paths
             </span>
-            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
-              Explore Our{" "}
-              <span className="text-[#ff5b3e]">Projects</span>
+            <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
+              Explore Our Projects{" "}
+              {/* <span className="text-[#ff5b3e]"></span> */}
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
               Structured learning paths designed by industry experts. Pick your interest and start learning today.
@@ -116,12 +116,14 @@ export function ProgramsPreview() {
             >
             <div className="h-full rounded-3xl bg-card border border-border/50 overflow-hidden card-hover">
                 {/* Gradient Header */}
-                <div className={`relative h-32 bg-gradient-to-br ${program.gradient} p-6`}>
+                <div className={`relative h-24 bg-gradient-to-br ${program.gradient} p-6`}>
                   <div className="absolute inset-0 bg-black/10" />
                   <div className="relative z-10">
-                    <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-sm mb-2">
-                      <program.icon className="h-7 w-7 text-white" />
-                    </div>
+                  <div className="inline-flex items-center justify-center h-14 min-w-14 px-3 rounded-2xl bg-white/20 backdrop-blur-sm mb-2">
+                    <span className="!text-white font-semibold text-sm sm:text-base lg:text-lg text-center leading-tight whitespace-nowrap">
+                      {program.title}
+                    </span>
+                  </div>
                   </div>
                   {/* Decorative circles */}
                   <div className="absolute -top-10 -right-10 w-32 h-32 bg-white/10 rounded-full" />
@@ -136,9 +138,9 @@ export function ProgramsPreview() {
                     </span>
                   </div>
                   
-                  <h3 className="font-display text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                  {/* <h3 className="font-display text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
                     {program.title}
-                  </h3>
+                  </h3> */}
                   <p className="text-sm text-muted-foreground leading-relaxed mb-6">
                     {program.description}
                   </p>

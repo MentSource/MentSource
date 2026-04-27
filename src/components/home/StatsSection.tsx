@@ -1,13 +1,13 @@
-import { TrendingUp, Users, BookOpen, Globe, Code, Award } from "lucide-react";
+import { TrendingUp } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
 
 const stats = [
-  { value: 26, suffix: "+", label: "Active Learners", icon: Users, color: "primary" },
-  { value: 8, suffix: "+", label: "Volunteer Mentors", icon: Award, color: "secondary" },
-  { value: 3, suffix: "+", label: "Countries Reached", icon: Globe, color: "accent" },
-  { value: 6, suffix: "+", label: "Learning Paths", icon: BookOpen, color: "primary" },
-  { value: 26, suffix: "+", label: "Contributors", icon: Code, color: "secondary" },
-  { value: 95, suffix: "%", label: "Completion Rate", icon: TrendingUp, color: "accent" },
+  { value: 20, suffix: "", label: "Active Learners", color: "primary" },
+  { value: 8, suffix: "", label: "Volunteer Mentors", color: "secondary" },
+  { value: 3, suffix: "", label: "Countries Reached", color: "accent" },
+  { value: 6, suffix: "", label: "Learning Paths", color: "primary" },
+  { value: 26, suffix: "", label: "Contributors", color: "secondary" },
+  { value: 95, suffix: "%", label: "Completion Rate", color: "accent" },
 ];
 
 function AnimatedNumber({ value, suffix }: { value: number; suffix: string }) {
@@ -53,9 +53,10 @@ function AnimatedNumber({ value, suffix }: { value: number; suffix: string }) {
 
 export function StatsSection() {
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="py-12 relative overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-hero" />
+      {/* <div className="absolute inset-0 bg-gradient-hero" /> */}
+      <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[76rem] bg-gradient-hero" />
       
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
@@ -64,13 +65,13 @@ export function StatsSection() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/5 rounded-full blur-3xl" />
       </div>
 
-      <div className="container-main relative z-10">
-        <div className="text-center mb-16">
+      <div className="container-main relative z-8">
+        <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 backdrop-blur-sm text-primary-foreground/80 mb-4">
             <TrendingUp className="h-5 w-5" />
             <span className="text-sm font-medium">Our Impact in Numbers</span>
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground">
+          <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-primary-foreground">
             Making a Difference Together
           </h2>
         </div>
@@ -83,7 +84,7 @@ export function StatsSection() {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Icon */}
-              <div 
+              {/* <div 
                 className={`inline-flex items-center justify-center w-12 h-12 rounded-2xl mb-4 transition-transform group-hover:scale-110 ${
                   stat.color === "primary" 
                     ? "bg-primary-foreground/10" 
@@ -91,15 +92,15 @@ export function StatsSection() {
                     ? "bg-secondary/20"
                     : "bg-accent/20"
                 }`}
-              >
-                <stat.icon className={`h-6 w-6 ${
+              > */}
+                {/* <stat.icon className={`h-6 w-6 ${
                   stat.color === "primary" 
                     ? "text-primary-foreground" 
                     : stat.color === "secondary"
                     ? "text-secondary"
                     : "text-accent"
-                }`} />
-              </div>
+                }`} /> */}
+              {/* </div> */}
 
               {/* Value */}
               <div className="text-primary-foreground mb-2">

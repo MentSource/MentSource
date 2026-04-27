@@ -80,7 +80,7 @@ const GetInvolved = () => {
             <span className="inline-block px-4 py-1.5 rounded-full bg-primary-light text-primary text-sm font-medium mb-4">
               Join Our Community
             </span>
-            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
+            <h1 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-6">
               Make a{" "}
               <span className="text-gradient-primary">Difference</span>
             </h1>
@@ -95,7 +95,7 @@ const GetInvolved = () => {
       <section className="section-padding">
         <div className="container-main">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-4">
+            <h2 className="font-display text-2xl sm:text-3xl font-bold text-foreground mb-4">
               Volunteer Opportunities
             </h2>
             <p className="text-muted-foreground">

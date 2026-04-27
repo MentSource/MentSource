@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     question: "How can my company partner with MentSource?",
-    answer: "We offer various partnership opportunities including sponsorship, employee volunteering programs, and curriculum development. Contact us at partnerships@MentSource.org to discuss.",
+    answer: "We offer various partnership opportunities including sponsorship, employee volunteering programs, and curriculum development. Contact us at 	mentsource.1@gmail.com to discuss.",
   },
 ];
 
@@ -45,7 +45,7 @@ export function FAQSection() {
             <span className="inline-block px-4 py-1.5 rounded-full bg-primary-light text-primary text-sm font-medium mb-4">
               Common Questions
             </span>
-            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+            <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-6">
               Frequently Asked{" "}
               <span className="text-[#ff5b3e]">Questions</span>
             </h2>

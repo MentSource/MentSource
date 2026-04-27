@@ -1,36 +1,36 @@
-import { BookOpen, Users, Award, Globe } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const steps = [
   {
-    icon: Globe,
+    // icon: Globe,
     step: "01",
     title: "Explore Open Resources",
-    description: "Dive straight into open-source learning materials, projects, and documentation—no sign-up required.",
+    description: "Dive straight into open-source learning materials, projects, and documentation.",
     color: "primary",
     href: "https://chaoss.moodlecloud.com",
   },
   {
-    icon: BookOpen,
+    // icon: BookOpen,
     step: "02",
-    title: "Choose Your Path",
-    description: "Discover learning tracks, real-world projects, and contribution areas that match your interests.",
+    title: "Good First Issues",
+    description: "Find and fix bugs, add features, or improve documentation in our open-source projects.",
     color: "secondary",
     href: "/documentation",
   },
   {
-    icon: Users,
+    // icon: Users,
     step: "03",
     title: "Collaborate & Learn",
-    description: "Learn in public, collaborate with contributors, and get guidance from experienced community members.",
+    description: "Learn, contributing to projects, and get guidance from experienced community members.",
     color: "accent",
-    href: "/community",
+    href: "/projects",
   },
   {
-    icon: Award,
+    // icon: Award,
     step: "04",
-    title: "Contribute & Give Back",
-    description: "Apply what you’ve learned by contributing to projects, mentoring others, and growing the community.",
+    title: "Get Direct Guidance",
+    description: "Get direct guidance from experienced mentors that specialize in your field of interest.",
     color: "primary",
     href: "/mentorship",
   },
@@ -46,9 +46,9 @@ export function HowItWorks() {
           <span className="inline-block px-4 py-1.5 rounded-full bg-primary text-white text-sm font-medium mb-4">
             Getting Started
           </span>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            How It{" "}
-            <span className="text-[#ff5b3e]">Works</span>
+          <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-6">
+            How It Works{" "}
+            {/* <span className="text-[#ff5b3e]"></span> */}
           </h2>
           <p className="text-lg text-muted-foreground">
             Your learning journey starts here. Four simple steps to unlock your potential.
@@ -56,7 +56,7 @@ export function HowItWorks() {
         </div>
 
         {/* Steps */}
-        <div className="relative mt-[-50px]">
+        <div className="relative mt-[-40px]">
           {/* Connecting Line - Desktop */}
           <div className="hidden lg:block absolute top-[100px] left-0 right-0 h-0.5 bg-gradient-to-r from-primary via-secondary to-accent" />
           
@@ -93,23 +93,22 @@ export function HowItWorks() {
                           : "bg-accent-light/30 border-accent/20 hover:border-accent/40"
                       }`}
                     >
-                      <div 
-                        className={`inline-flex items-center justify-center w-14 h-14 rounded-xl mb-4 ${
-                          step.color === "primary"
-                            ? "bg-primary text-primary-foreground"
-                            : step.color === "secondary"
-                            ? "bg-base text-secondary-foreground"
-                            : "bg-accent text-accent-foreground"
-                        }`}
-                      >
-                        <step.icon className="h-7 w-7" />
-                      </div>
                       <h3 className="font-display text-xl font-semibold text-foreground mb-2">
                         {step.title}
                       </h3>
                       <p className="text-muted-foreground text-sm leading-relaxed">
                         {step.description}
                       </p>
+                      <ArrowRight
+                        aria-hidden="true"
+                        className={`absolute bottom-4 right-4 h-5 w-5 transition-all duration-300 group-hover:translate-x-1 ${
+                          step.color === "primary"
+                            ? "text-primary"
+                            : step.color === "secondary"
+                            ? "text-base"
+                            : "text-accent"
+                        }`}
+                      />
                     </a>
                   ) : (
                     <Link
@@ -122,23 +121,22 @@ export function HowItWorks() {
                           : "bg-accent-light/30 border-accent/20 hover:border-accent/40"
                       }`}
                     >
-                    <div 
-                      className={`inline-flex items-center justify-center w-14 h-14 rounded-xl mb-4 ${
-                        step.color === "primary"
-                          ? "bg-primary text-primary-foreground"
-                          : step.color === "secondary"
-                          ? "bg-base text-secondary-foreground"
-                          : "bg-accent text-accent-foreground"
-                      }`}
-                    >
-                      <step.icon className="h-7 w-7" />
-                    </div>
                     <h3 className="font-display text-xl font-semibold text-foreground mb-2">
                       {step.title}
                     </h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">
                       {step.description}
                     </p>
+                    <ArrowRight
+                      aria-hidden="true"
+                      className={`absolute bottom-4 right-4 h-5 w-5 transition-all duration-300 group-hover:translate-x-1 ${
+                        step.color === "primary"
+                          ? "text-primary"
+                          : step.color === "secondary"
+                          ? "text-base"
+                          : "text-accent"
+                      }`}
+                    />
                     </Link>
                   )}
                 </div>

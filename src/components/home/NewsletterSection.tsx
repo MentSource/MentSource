@@ -46,7 +46,7 @@ export function NewsletterSection() {
             </span>
             
             <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
-              Join 26+ Learners
+              Join our Learners
             </h2>
             <p className="text-lg text-primary-foreground/80 mb-8">
               Get weekly learning tips, new course announcements, and community highlights delivered to your inbox.
