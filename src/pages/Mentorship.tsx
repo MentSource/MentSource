@@ -184,7 +184,7 @@ const Mentorship = () => {
                     <div className="hidden md:block absolute top-12 left-1/2 w-full h-0.5 bg-border" />
                   )}
                   <div className="relative text-center">
-                    <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-primary text-primary-foreground text-3xl font-bold mb-6">
+                    <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-primary-dark text-primary-foreground text-3xl font-bold mb-6">
                       {step.number}
                     </div>
                     <h3 className="font-display text-xl font-semibold text-foreground mb-2">{step.title}</h3>

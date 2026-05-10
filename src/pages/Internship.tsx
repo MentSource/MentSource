@@ -26,10 +26,10 @@ const paidInternshipPrograms = [
     howToApply:
       "When applications open, complete the eligibility check, choose participating communities, and submit the required essays, contribution plan, and any other materials listed for that round.",
     url: "https://www.outreachy.org/",
-    borderAccent: "border-[#8354d4]/50 shadow-[0_0_0_1px_rgba(131,84,212,0.2)]",
-    iconWrap: "bg-[#8354d4]/15",
+    borderAccent: "border-[#022DA4]/50 shadow-[0_0_0_1px_rgba(2,45,164,0.2)]",
+    iconWrap: "bg-[#022DA4]/15",
     buttonClassName:
-      "border-2 border-[#8354d4] text-[#8354d4] bg-transparent hover:bg-[#8354d4] hover:text-white hover:border-[#8354d4] focus-visible:ring-[#8354d4]",
+      "border-2 border-[#022DA4] text-[#022DA4] bg-transparent hover:bg-[#022DA4] hover:text-white hover:border-[#022DA4] focus-visible:ring-[#022DA4]",
   },
   {
     name: "LFX Mentorship",
@@ -40,10 +40,10 @@ const paidInternshipPrograms = [
     howToApply:
       "Browse open programs on the LFX portal, read the project description and prerequisites, complete any required contribution or questionnaire, then apply during that project's application period.",
     url: "https://mentorship.lfx.linuxfoundation.org/",
-    borderAccent: "border-[#fe5b3e]/50 shadow-[0_0_0_1px_rgba(254,91,62,0.2)]",
-    iconWrap: "bg-[#fe5b3e]/15",
+    borderAccent: "border-[#FF5B3E]/50 shadow-[0_0_0_1px_rgba(255,91,62,0.2)]",
+    iconWrap: "bg-[#FF5B3E]/15",
     buttonClassName:
-      "border-2 border-[#fe5b3e] text-[#fe5b3e] bg-transparent hover:bg-[#fe5b3e] hover:text-white hover:border-[#fe5b3e] focus-visible:ring-[#fe5b3e]",
+      "border-2 border-[#FF5B3E] text-[#FF5B3E] bg-transparent hover:bg-[#FF5B3E] hover:text-white hover:border-[#FF5B3E] focus-visible:ring-[#FF5B3E]",
   },
   {
     name: "European Summer of Code (ESoC)",
@@ -68,10 +68,10 @@ const paidInternshipPrograms = [
     howToApply:
       "Pick a fellowship on the MLH site, confirm you can meet the weekly schedule and tech stack, prepare your application (often including a short video or written answers), and submit before the cohort deadline.",
     url: "https://fellowship.mlh.io/",
-    borderAccent: "border-[#ff6b35]/50 shadow-[0_0_0_1px_rgba(255,107,53,0.2)]",
-    iconWrap: "bg-[#ff6b35]/15",
+    borderAccent: "border-[#FF5B3E]/50 shadow-[0_0_0_1px_rgba(255,91,62,0.2)]",
+    iconWrap: "bg-[#FF5B3E]/15",
     buttonClassName:
-      "border-2 border-[#ff6b35] text-[#ff6b35] bg-transparent hover:bg-[#ff6b35] hover:text-white hover:border-[#ff6b35] focus-visible:ring-[#ff6b35]",
+      "border-2 border-[#FF5B3E] text-[#FF5B3E] bg-transparent hover:bg-[#FF5B3E] hover:text-white hover:border-[#FF5B3E] focus-visible:ring-[#FF5B3E]",
   },
 ] as const;
 
@@ -85,6 +85,14 @@ const pastInterns = [
     description: "Build real features on MentSource projects with review support of an experienced mentor.",
   },
 
+  {
+    icon: GraduationCap,
+    name: "Joy Aniebo",
+    role: "Mobile Developer",
+    project: "NITAR",
+    internshiptype: "Unpaid",
+    description: "Build real features on MentSource projects with review support of an experienced mentor.",
+  },
   {
     icon: GraduationCap,
     name: "Nathan Daniel",

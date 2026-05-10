@@ -1,4 +1,4 @@
-import { Heart, Target, Eye, Users, Award, Globe } from "lucide-react";
+import { Heart, Users, Award, Globe } from "lucide-react";
 
 import pecImg from "@/assets/pec.png";
 import hammedImg from "@/assets/hammed.jpg";
@@ -6,10 +6,10 @@ import temitopeImg from "@/assets/temitope.jpg";
 
 const team = [
   {
-    name: "Peculiar C. Umeh",
+    name: "Peculiar C.",
     role: "Founder",
     bio: "Open-source advocate and community builder",
-    image: pecImg,
+    image: "",
   },
   {
     name: "Temitope Longe", 
@@ -100,8 +100,12 @@ const About = () => {
           <div className="container-main">
             <div className="grid md:grid-cols-2 gap-12">
               <div className="p-8 rounded-3xl bg-gradient-card border border-border/50">
-                <div className="w-14 h-14 rounded-2xl bg-primary-light text-primary flex items-center justify-center mb-6">
-                  <Target className="h-7 w-7" />
+                <div className="w-14 h-14 rounded-2xl bg-primary-light flex items-center justify-center mb-6 overflow-hidden p-1.5">
+                  <img
+                    src="/logo3.jpg"
+                    alt="MentSource"
+                    className="h-full w-full object-contain"
+                  />
                 </div>
                 <h2 className="font-display text-2xl font-bold text-foreground mb-4">Our Mission</h2>
                 <p className="text-muted-foreground leading-relaxed">
@@ -109,8 +113,12 @@ const About = () => {
                 </p>
               </div>
               <div className="p-8 rounded-3xl bg-gradient-card border border-border/50">
-                <div className="w-14 h-14 rounded-2xl bg-secondary-light text-secondary flex items-center justify-center mb-6">
-                  <Eye className="h-7 w-7" />
+                <div className="w-14 h-14 rounded-2xl bg-secondary-light flex items-center justify-center mb-6 overflow-hidden p-1.5">
+                  <img
+                    src="/logo3.jpg"
+                    alt="MentSource"
+                    className="h-full w-full object-contain"
+                  />
                 </div>
                 <h2 className="font-display text-2xl font-bold text-foreground mb-4">Our Vision</h2>
                 <p className="text-muted-foreground leading-relaxed">
@@ -171,7 +179,7 @@ const About = () => {
                         <p className="text-sm text-muted-foreground mt-1">{milestone.description}</p>
                       </div>
                     </div>
-                    <div className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-primary -translate-x-1/2 ring-4 ring-background" />
+                    <div className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-primary-dark -translate-x-1/2 ring-4 ring-background" />
                     <div className="flex-1 hidden md:block" />
                   </div>
                 ))}

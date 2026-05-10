@@ -6,7 +6,7 @@ export function BentoMission() {
       <div className="container-main">
         {/* Section Header */}
         <div className="text-center mx-auto mb-4">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-primary text-white text-sm font-medium mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-primary-dark text-white text-sm font-medium mb-4">
             Why We Exist
           </span>
           <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-6">
@@ -107,7 +107,7 @@ export function BentoMission() {
 
           {/* Volunteer Led */}
           <div className="relative overflow-hidden rounded-3xl bg-card border border-border/50 p-6 lg:p-8 card-hover group">
-            <div className="absolute -top-10 -left-10 w-32 h-32 bg-primary/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500" />
+          <div className="absolute -top-10 -left-10 w-32 h-32 bg-primary-dark/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500" />
             <div className="relative z-10">
               {/* <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary-light mb-4">
                 <Heart className="h-6 w-6 text-primary" />

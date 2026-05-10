@@ -65,7 +65,7 @@ export function ProgramsPreview() {
         {/* Section Header */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-6">
           <div>
-            <span className="inline-block px-4 py-1.5 rounded-full bg-primary text-white text-sm font-medium mb-4">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-primary-dark text-white text-sm font-medium mb-4">
               Learning Paths
             </span>
             <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">

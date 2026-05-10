@@ -87,7 +87,7 @@ export function Header() {
               variant="outline"
               size="sm"
               asChild
-              className="border-primary/30 hover:border-primary/60 hover:bg-primary/5"
+              className="border-primary/30 hover:border-primary/60 hover:bg-primary-dark/5"
             >
               <div onClick={()=> navigateTo("/community")} className="cursor-pointer">Volunteer</div>
             </Button>
