@@ -1,12 +1,12 @@
 import { Heart, Users, Award, Globe } from "lucide-react";
 
-import pecImg from "@/assets/pec.png";
+
 import hammedImg from "@/assets/hammed.jpg";
 import temitopeImg from "@/assets/temitope.jpg";
 
 const team = [
   {
-    name: "Peculiar C.",
+    name: "",
     role: "Founder",
     bio: "Open-source advocate and community builder",
     image: "",
@@ -23,12 +23,12 @@ const team = [
     bio: "Open-source contributor and mentor",
     image: hammedImg,
   },
-  // {
-  //   name: "Aisha Patel",
-  //   role: "Director of Mentorship",
-  //   bio: "Passionate about accessible education globally",
-  //   image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&h=300&fit=crop&crop=face",
-  // },
+  {
+    name: "Aisha Patel",
+    role: "Director of Mentorship",
+    bio: "Passionate about accessible education globally",
+    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&h=300&fit=crop&crop=face",
+  },
   // {
   //   name: "David Kim",
   //   role: "CTO",
@@ -200,16 +200,25 @@ const About = () => {
               </p>
             </div>
             <div className="grid sm:grid-cols-2 gap-8 pl-4 md:pl-8 max-w-3xl mx-auto justify-items-center">
-              {team.map((member) => (
-                <div key={member.name} className="text-center group">
+              {team.map((member, index) => (
+                <div key={member.name || `${member.role}-${index}`} className="text-center group">
                   <div className="relative mb-4 inline-block">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="w-32 h-32 rounded-full object-cover mx-auto ring-4 ring-border group-hover:ring-primary transition-all"
-                    />
+                    {member.image ? (
+                      <img
+                        src={member.image}
+                        alt={member.name || member.role}
+                        className="w-32 h-32 rounded-full object-cover mx-auto ring-4 ring-border group-hover:ring-primary transition-all"
+                      />
+                    ) : (
+                      <div
+                        aria-hidden
+                        className="w-32 h-32 rounded-full mx-auto ring-4 ring-border group-hover:ring-primary transition-all bg-muted"
+                      />
+                    )}
                   </div>
-                  <h3 className="font-display font-semibold text-foreground">{member.name}</h3>
+                  {member.name && (
+                    <h3 className="font-display font-semibold text-foreground">{member.name}</h3>
+                  )}
                   <p className="text-sm text-primary font-medium">{member.role}</p>
                   <p className="text-sm text-muted-foreground mt-2">{member.bio}</p>
                 </div>
