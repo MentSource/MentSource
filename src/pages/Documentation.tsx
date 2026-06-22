@@ -121,7 +121,7 @@ const rows: DocumentationRow[] = [
 const Documentation = () => {
   return (
     <>
-      <section className="section-padding bg-[#f6fcfa]">
+      <section className="section-padding bg-background">
         <div className="container-main">
           <div className="max-w-6xl mx-auto">
             <h1 className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-3">
@@ -134,42 +134,32 @@ const Documentation = () => {
         </div>
       </section>
 
-      <section className="section-padding bg-[#f6fcfa]">
+      <section className="section-padding pt-6 bg-background">
         <div className="container-main">
           <div className="max-w-6xl mx-auto">
-            <div className="rounded-2xl border border-border/60 bg-white/70 overflow-hidden">
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse">
-                  <thead className="bg-white/60">
-                    <tr className="text-left text-xs font-semibold text-muted-foreground">
-                      {/* <th className="px-4 py-3">Title</th> */}
-                      <th className="px-4 py-3 text-right"> </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {rows.map((row) => (
-                      <tr
-                        key={row.href}
-                        className="border-t border-[#8fd4d8] bg-white/70 hover:bg-white"
-                      >
-                        <td className="px-4 py-4 text-sm font-medium text-foreground">
-                          {row.title}
-                        </td>
-                        <td className="px-4 py-4 text-right">
-                          <a
-                            href={row.href}
-                            target="_blank"
-                            rel="noreferrer"
-                            className="text-sm font-medium text-primary hover:underline"
-                          >
-                            Search and contribute this open source projects
-                          </a>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {rows.map((row) => (
+                <div
+                  key={row.href}
+                  className="rounded-2xl border border-border/60 bg-white/70 p-6 flex items-start justify-between gap-4"
+                >
+                  <div>
+                    <div className="text-sm font-semibold text-foreground">{row.title}</div>
+                    <div className="text-xs text-muted-foreground mt-1">
+                      Find beginner-friendly issues and start contributing.
+                    </div>
+                  </div>
+
+                  <a
+                    href={row.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="shrink-0 inline-flex items-center rounded-xl bg-primary-dark px-3 py-2 text-xs font-semibold text-primary-foreground hover:opacity-95"
+                  >
+                   Access link
+                  </a>
+                </div>
+              ))}
             </div>
           </div>
         </div>

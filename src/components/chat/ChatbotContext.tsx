@@ -25,7 +25,7 @@ function uid() {
 
 export function ChatbotProvider({ children }: { children: React.ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
-  const welcomeText = "Welcome to MentSource. How much would you like to donate?";
+  const welcomeText = "Welcome to MentSource. Our open Collective is coming soon. Chat with us?";
   const followupText = "Send us an email: mentsource_1@gmail.com";
   const [messages, setMessages] = useState<ChatMessage[]>([
     { id: uid(), role: "bot", text: welcomeText },

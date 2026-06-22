@@ -8,7 +8,8 @@ const steps = [
     title: "Explore Open Resources",
     description: "Dive straight into open-source learning materials, projects, and documentation.",
     color: "primary",
-    href: "https://chaoss.moodlecloud.com",
+    href: "/resources",
+    // href: "https://chaoss.moodlecloud.com",
   },
   {
     // icon: BookOpen,
@@ -43,7 +44,7 @@ export function HowItWorks() {
       <div className="container-main">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-primary text-white text-sm font-medium mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-primary-dark text-white text-sm font-medium mb-4">
             Getting Started
           </span>
           <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-6">
@@ -68,7 +69,7 @@ export function HowItWorks() {
                   <div 
                     className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg shadow-lg transition-transform group-hover:scale-110 ${
                       step.color === "primary" 
-                        ? "bg-primary text-primary-foreground" 
+                        ? "bg-primary-dark text-primary-foreground" 
                         : step.color === "secondary"
                         ? "bg-base text-secondary-foreground"
                         : "bg-accent text-accent-foreground"

@@ -2,8 +2,11 @@ import { ArrowRight, Heart, Users, BookOpen, Rocket } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { navigateTo } from "@/lib/utils";
 import temitopeImg from "@/assets/temitope.jpg";
+import { useChatbot } from "@/components/chat/ChatbotContext";
 
 export function CTASection() {
+  const { openDonateChat } = useChatbot();
+
   return (
     <section className="section-padding">
       <div className="container-main">
@@ -96,7 +99,7 @@ export function CTASection() {
           </div>
 
           {/* Tertiary CTA - Support */}
-          <div className="relative overflow-hidden rounded-3xl bg-[#5a85fe] p-8 group card-hover">
+          <div className="relative overflow-hidden rounded-3xl bg-accent p-8 group card-hover">
             <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-primary-foreground/10 rounded-full blur-2xl" />
             
             <div className="relative z-10">
@@ -105,7 +108,7 @@ export function CTASection() {
               </div>
               
               <h3 className="font-display text-2xl font-bold text-accent-foreground mb-3">
-                Support Our Mission
+                Support Our Mission         
               </h3>
               <p className="text-accent-foreground/80 mb-6">
                 Help us reach more learners in Africa and keep education free for everyone.
@@ -117,7 +120,7 @@ export function CTASection() {
                 className="text-white hover:bg-accent-foreground/10 p-0 h-auto"
                 asChild
               >
-                <div onClick={()=>navigateTo("/")} className="flex items-center cursor-pointer gap-2 cursor-pointer">
+                <div onClick={openDonateChat} className="flex items-center cursor-pointer gap-2">
                   Donate Now
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </div>

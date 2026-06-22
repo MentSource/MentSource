@@ -1,15 +1,15 @@
-import { Heart, Target, Eye, Users, Award, Globe } from "lucide-react";
+import { Heart, Users, Award, Globe } from "lucide-react";
 
-import pecImg from "@/assets/pec.png";
+
 import hammedImg from "@/assets/hammed.jpg";
 import temitopeImg from "@/assets/temitope.jpg";
 
 const team = [
   {
-    name: "Peculiar C. Umeh",
+    name: "",
     role: "Founder",
     bio: "Open-source advocate and community builder",
-    image: pecImg,
+    image: "",
   },
   {
     name: "Temitope Longe", 
@@ -23,12 +23,12 @@ const team = [
     bio: "Open-source contributor and mentor",
     image: hammedImg,
   },
-  // {
-  //   name: "Aisha Patel",
-  //   role: "Director of Mentorship",
-  //   bio: "Passionate about accessible education globally",
-  //   image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&h=300&fit=crop&crop=face",
-  // },
+  {
+    name: "Aisha Patel",
+    role: "Director of Mentorship",
+    bio: "Passionate about accessible education globally",
+    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&h=300&fit=crop&crop=face",
+  },
   // {
   //   name: "David Kim",
   //   role: "CTO",
@@ -100,8 +100,12 @@ const About = () => {
           <div className="container-main">
             <div className="grid md:grid-cols-2 gap-12">
               <div className="p-8 rounded-3xl bg-gradient-card border border-border/50">
-                <div className="w-14 h-14 rounded-2xl bg-primary-light text-primary flex items-center justify-center mb-6">
-                  <Target className="h-7 w-7" />
+                <div className="w-14 h-14 rounded-2xl bg-primary-light flex items-center justify-center mb-6 overflow-hidden p-1.5">
+                  <img
+                    src="/logo3.jpg"
+                    alt="MentSource"
+                    className="h-full w-full object-contain"
+                  />
                 </div>
                 <h2 className="font-display text-2xl font-bold text-foreground mb-4">Our Mission</h2>
                 <p className="text-muted-foreground leading-relaxed">
@@ -109,8 +113,12 @@ const About = () => {
                 </p>
               </div>
               <div className="p-8 rounded-3xl bg-gradient-card border border-border/50">
-                <div className="w-14 h-14 rounded-2xl bg-secondary-light text-secondary flex items-center justify-center mb-6">
-                  <Eye className="h-7 w-7" />
+                <div className="w-14 h-14 rounded-2xl bg-secondary-light flex items-center justify-center mb-6 overflow-hidden p-1.5">
+                  <img
+                    src="/logo3.jpg"
+                    alt="MentSource"
+                    className="h-full w-full object-contain"
+                  />
                 </div>
                 <h2 className="font-display text-2xl font-bold text-foreground mb-4">Our Vision</h2>
                 <p className="text-muted-foreground leading-relaxed">
@@ -171,7 +179,7 @@ const About = () => {
                         <p className="text-sm text-muted-foreground mt-1">{milestone.description}</p>
                       </div>
                     </div>
-                    <div className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-primary -translate-x-1/2 ring-4 ring-background" />
+                    <div className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-primary-dark -translate-x-1/2 ring-4 ring-background" />
                     <div className="flex-1 hidden md:block" />
                   </div>
                 ))}
@@ -192,16 +200,25 @@ const About = () => {
               </p>
             </div>
             <div className="grid sm:grid-cols-2 gap-8 pl-4 md:pl-8 max-w-3xl mx-auto justify-items-center">
-              {team.map((member) => (
-                <div key={member.name} className="text-center group">
+              {team.map((member, index) => (
+                <div key={member.name || `${member.role}-${index}`} className="text-center group">
                   <div className="relative mb-4 inline-block">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="w-32 h-32 rounded-full object-cover mx-auto ring-4 ring-border group-hover:ring-primary transition-all"
-                    />
+                    {member.image ? (
+                      <img
+                        src={member.image}
+                        alt={member.name || member.role}
+                        className="w-32 h-32 rounded-full object-cover mx-auto ring-4 ring-border group-hover:ring-primary transition-all"
+                      />
+                    ) : (
+                      <div
+                        aria-hidden
+                        className="w-32 h-32 rounded-full mx-auto ring-4 ring-border group-hover:ring-primary transition-all bg-muted"
+                      />
+                    )}
                   </div>
-                  <h3 className="font-display font-semibold text-foreground">{member.name}</h3>
+                  {member.name && (
+                    <h3 className="font-display font-semibold text-foreground">{member.name}</h3>
+                  )}
                   <p className="text-sm text-primary font-medium">{member.role}</p>
                   <p className="text-sm text-muted-foreground mt-2">{member.bio}</p>
                 </div>

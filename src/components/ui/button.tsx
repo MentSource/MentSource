@@ -9,16 +9,16 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground shadow-sm hover:shadow-md",
+        default: "bg-primary-dark text-primary-foreground shadow-sm hover:shadow-md",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground",
+        outline: "border-2 border-primary bg-transparent text-primary hover:bg-primary-dark hover:text-primary-foreground",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-muted hover:text-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-primary text-primary-foreground hover:bg-primary-dark shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-semibold",
+        hero: "bg-primary-dark text-primary-foreground hover:bg-primary-dark shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-semibold",
         "hero-outline": "border-2 border-primary-foreground/30 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground hover:text-primary backdrop-blur-sm font-semibold",
         warm: "bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-sm hover:shadow-md font-semibold",
-        subtle: "bg-primary-light text-primary hover:bg-primary hover:text-primary-foreground",
+        subtle: "bg-primary-light text-primary hover:bg-primary-dark hover:text-primary-foreground",
       },
       size: {
         default: "h-10 px-5 py-2",

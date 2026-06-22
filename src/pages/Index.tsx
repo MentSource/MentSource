@@ -3,6 +3,7 @@ import { BentoMission } from "@/components/home/BentoMission";
 import { HowItWorks } from "@/components/home/HowItWorks";
 import { ProgramsPreview } from "@/components/home/ProgramsPreview";
 import { StatsSection } from "@/components/home/StatsSection";
+import { EventsSection } from "@/components/home/EventsSection";
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { NewsletterSection } from "@/components/home/NewsletterSection";
 import { FAQSection } from "@/components/home/FAQSection";
@@ -16,6 +17,7 @@ const Index = () => {
         <HowItWorks />
         <ProgramsPreview />
         <StatsSection />
+        <EventsSection />
         <TestimonialsSection />
         <NewsletterSection />
         <FAQSection />

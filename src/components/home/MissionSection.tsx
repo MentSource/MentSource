@@ -1,14 +1,16 @@
-import { Target, Globe, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
+
+const logo3Src = "/logo3.jpg";
 
 const values = [
   {
-    icon: Target,
+    imageSrc: logo3Src,
     title: "Our Mission",
     description: "To democratize education by providing free, high-quality learning resources and mentorship opportunities to everyone, regardless of their background.",
     color: "primary",
   },
   {
-    icon: Globe,
+    imageSrc: logo3Src,
     title: "Global Reach",
     description: "We connect learners and mentors across 120+ countries, breaking down geographical barriers to create a truly global learning community.",
     color: "secondary",
@@ -56,7 +58,17 @@ export function MissionSection() {
                     : "bg-accent-light text-accent"
                 }`}
               >
-                <value.icon className="h-7 w-7" />
+                {"imageSrc" in value && value.imageSrc ? (
+                  <img
+                    src={value.imageSrc}
+                    alt=""
+                    className="h-6 w-6 object-contain"
+                  />
+                ) : (
+                  "icon" in value && value.icon && (
+                    <value.icon className="h-7 w-7" />
+                  )
+                )}
               </div>
               <h3 className="font-display text-xl font-semibold text-foreground mb-3">
                 {value.title}

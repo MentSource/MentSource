@@ -46,7 +46,7 @@ export function ChatbotWidget() {
                 className={cn(
                   "text-sm leading-relaxed px-3 py-2 rounded-2xl w-fit max-w-[85%]",
                   m.role === "user"
-                    ? "ml-auto bg-primary text-primary-foreground rounded-br-md"
+                    ? "ml-auto bg-primary-dark text-primary-foreground rounded-br-md"
                     : "bg-muted text-foreground rounded-bl-md"
                 )}
               >

@@ -40,7 +40,7 @@ export function NewsletterSection() {
 
           {/* Content */}
           <div className="relative z-10 max-w-2xl mx-auto text-center">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary backdrop-blur-sm text-primary-foreground text-sm font-medium mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-dark backdrop-blur-sm text-primary-foreground text-sm font-medium mb-6">
               <Mail className="h-4 w-4" />
               Stay Updated
             </span>
