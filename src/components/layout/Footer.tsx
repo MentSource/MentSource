@@ -110,7 +110,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-4 pt-3 border-t border-background/10">
           <p className="text-background/50 text-xs sm:text-sm leading-tight">
-            © {new Date().getFullYear()} MentSource Foundation. All rights reserved.
+            © 2024 MentSource Foundation. All rights reserved.
           </p>
         </div>
       </div>

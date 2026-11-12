@@ -7,7 +7,6 @@ import { navigateTo } from "@/lib/utils";
 
 import godsWillImg from "@/assets/godswill.png";
 import temitopeImg from "@/assets/temitope.jpg";
-import hammedImg from "@/assets/hammed.jpg";
 
 const START_BUILDING_FORM_URL = "https://forms.gle/hTABxBPqHF1Wnxba6";
 const MENTOR_FORM_URL = "https://forms.gle/afkQYSu8ApbypaEfA";
@@ -59,14 +58,6 @@ const mentors = [
     image: temitopeImg,
     rating: 5.0,
     sessions: 20,
-  },
-  {
-    name: "Hammed Sanni",
-    role: "Frontend Developer at ",
-    expertise: ["React", "TypeScript"],
-    image: hammedImg,
-    rating: 3.0,
-    sessions: 10,
   },
 ];
 
@@ -209,7 +200,7 @@ const Mentorship = () => {
                 </p>
               </div>
             </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
               {mentors.map((mentor) => (
                 <div key={mentor.name} className="p-6 rounded-2xl bg-card border border-border/50 card-hover">
                   <img
