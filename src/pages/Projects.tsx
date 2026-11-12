@@ -175,8 +175,8 @@ const Programs = () => {
             <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
               Explore our documentation to discover the learning path that fits your goals and experience level.
             </p>
-            <Button variant="hero-outline" size="lg">
-              Explore our doc
+            <Button variant="hero-outline" size="lg" asChild>
+              <Link to="/documentation">Explore our doc</Link>
             </Button>
           </div>
           <div className="absolute bottom-0 left-0 right-0">

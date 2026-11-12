@@ -7,6 +7,7 @@ import {
   Mail, MapPin, MessageCircle, Send, CheckCircle
 } from "lucide-react";
 import { toast } from "sonner";
+import { Link } from "react-router-dom";
 import { EMAILJS_CONFIG, RECIPIENT_EMAIL } from "@/config/emailjs";
 
 const contactMethods = [
@@ -84,8 +85,7 @@ const Contact = () => {
                 Get in Touch
               </span>
               <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-                We'd Love to{" "}
-                <span className="text-gradient-primary">Hear From You</span>
+                We'd Love to Hear From You.
               </h1>
               <p className="text-lg text-primary-foreground/80">
                 Have a question, suggestion, or want to partner with us? We're here to help.
@@ -229,7 +229,7 @@ const Contact = () => {
               Check out our docs for immediate help on common issues
             </p>
             <Button variant="outline" asChild>
-              <a href="">Read Docs</a>
+              <Link to="/documentation">Read Docs</Link>
             </Button>
           </div>
         </section>

@@ -11,16 +11,17 @@ const events = [
     title: "Mentorship Kickoff ",
     description:
       "Meet mentors, connect with fellow learners, and learn how to get the most out of MentSource programs and community resources.",
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=450&fit=crop",
+    image: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=800&h=450&fit=crop",
   },
   {
     title: "Frontend Study Circle",
     description:
       "Weekly sessions focused on React, TypeScript, and modern web development through hands-on exercises and group discussions.",
-    image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&h=450&fit=crop",
+    image: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=800&h=450&fit=crop",
   },
 ];
 
+//https://x.com/HammedSanni5/status/2054732230992273563
 export function EventsSection() {
   return (
     <section className="section-padding overflow-hidden">
