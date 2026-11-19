@@ -34,7 +34,7 @@ export function HeroSection() {
             </div> */}
 
             {/* Headline */}
-            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-in stagger-1">
+            <h1 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground leading-tight mb-20 animate-fade-in stagger-1">
               Open Source Collaboration for{" "}
               <span className="relative inline-block">
                 <span className="relative z-10">Everyone</span>
@@ -45,7 +45,7 @@ export function HeroSection() {
             </h1>
 
             {/* Subheadline */}
-            <p className="text-lg sm:text-xl text-primary-foreground/80 max-w-xl mx-auto lg:mx-0 mb-8 animate-fade-in stagger-2">
+            <p className="text-sm sm:text-[1rem] sm:leading-6 text-white max-w-xl mx-auto lg:mx-0 mb-8 animate-fade-in stagger-2">
             MentSource drives open source innovation, enabling impactful collaborations and promoting a thriving global community of contributors. We strive to cultivate a network of developers passionate about open source. We train and mentor the next generation of open source contributors, offering one-on-one guidance, hands-on projects, and support to help them make meaningful contributions to projects that matter. We believe in the power of open source to drive innovation, promote collaboration, and create a more inclusive tech ecosystem.
             </p>
 
