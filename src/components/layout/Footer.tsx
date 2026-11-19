@@ -23,7 +23,7 @@ const footerLinks = {
 const socialLinks = [
   { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/company/ment-source" },
   { name: "GitHub", icon: Github, href: "https://github.com/MentSource" },
-  { name: "Twitter", icon: Twitter, href: "https://x.com/mentsource" },
+  // { name: "Twitter", icon: Twitter, href: "https://x.com/mentsource" },
   { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/mentsource/" },
   { name: "Email", icon: Mail, href: "mailto: mentsourceinquiries@gmail.com" },
 ];
